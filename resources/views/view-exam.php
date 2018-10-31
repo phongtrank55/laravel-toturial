@@ -1,0 +1,1 @@
+Chào bạn <?=$name ?> , đây là view-exam 
