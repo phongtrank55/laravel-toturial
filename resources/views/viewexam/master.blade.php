@@ -2,28 +2,7 @@
 <html>
 <head>
 	<title>Laravel toturial - @yield('title')</title>
-	<style type="text/css">
-		#wrapper{
-			width: 980px;
-			height: auto;
-			margin: 0 auto;
-		}
-		#header{
-			width: auto;
-			height: 100px;
-			background-color: red;
-		}
-		#content{
-			width: auto;
-			height: 400px;
-			background-color: green;
-		}
-		#footer{
-			width: auto;
-			height: 50px;
-			background-color: blue;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="{{asset('public/template/css/mystyle.css')}}">
 </head>
 <body>
 	<div id = "wrapper">

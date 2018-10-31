@@ -94,3 +94,29 @@ Route::get('view-exam2', function(){
 	return view('viewexam.view2');
 });
 
+Route::group(['prefix' => 'url'], function(){
+	Route::get('full', function(){
+		return URL::full();
+	});
+
+	Route::get('to', function(){
+		echo URL::to('info', ['year'=>2018, 'name' => 'Phong Bui']);
+		echo '<br>';
+		echo URL::to('info', ['year'=>2018, 'name' => 'Phong Bui'], true); //https
+	});
+
+	Route::get('asset', function(){
+		// return URL::asset('css/mystyle.css');
+		echo asset('css/mystyle.css');
+		echo '<br>';
+		echo asset('css/mystyle.css', true); //https
+	});
+
+	//Chi https
+
+	Route::get('secure', function(){
+		
+		echo secure_url('info', ['year'=>2018, 'name' => 'Phong Bui']);
+	});
+
+});
