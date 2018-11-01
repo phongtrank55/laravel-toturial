@@ -20,3 +20,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+
+// require('~admin-lte/dist/js/adminlte.min.js');
